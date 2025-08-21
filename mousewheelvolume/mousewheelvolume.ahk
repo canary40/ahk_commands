@@ -1,15 +1,20 @@
-; Aumenta il volume con Alt + Rotella Su
+#Persistent
+Menu, Tray, Icon, favicon.ico
+Menu, Tray, NoStandard
+Menu, Tray, Tip, mouse wheel volume
+Menu, Tray, Add, Esci, Esci
+Menu, Tray, Default, Apri
+return
 !WheelUp::
     Send {Volume_Up 1}  ; Aumenta il volume di 2 unità
 return
-
-; Abbassa il volume con Alt + Rotella Giù
 !WheelDown::
     Send {Volume_Down 1}  ; Abbassa il volume di 2 unità
 return
-
-; Disattiva/attiva il muto premendo la rotella del mouse
 !MButton::
     Send {Volume_Mute}  ;
     Send, {Media_Play_Pause} ; 
+return
+Esci:
+  ExitApp
 return
