@@ -3,7 +3,6 @@ Menu, Tray, Icon, favicon.ico
 Menu, Tray, NoStandard
 Menu, Tray, Tip, mouse wheel volume
 Menu, Tray, Add, Esci, Esci
-Menu, Tray, Default, Apri
 return
 !WheelUp::
     Send {Volume_Up 1}  ; Aumenta il volume di 2 unità
