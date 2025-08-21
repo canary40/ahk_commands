@@ -1,4 +1,9 @@
 #Persistent
+Menu, Tray, Icon, favicon.ico
+Menu, Tray, NoStandard
+Menu, Tray, Tip, wi-fi selector
+Menu, Tray, Add, Apri, ShowPopup
+Menu, Tray, Default, Apri
 End::
 	Gui, +ToolWindow +AlwaysOnTop -Caption
     Gui, Add, Text, x10 y10, Scegli una rete:
