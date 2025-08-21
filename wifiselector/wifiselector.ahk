@@ -2,8 +2,10 @@
 Menu, Tray, Icon, favicon.ico
 Menu, Tray, NoStandard
 Menu, Tray, Tip, wi-fi selector
-Menu, Tray, Add, Apri, ShowPopup
+Menu, Tray, Add, Apri, End
+Menu, Tray, Add, Esci, Esci
 Menu, Tray, Default, Apri
+return
 End::
 	Gui, +ToolWindow +AlwaysOnTop -Caption
     Gui, Add, Text, x10 y10, Scegli una rete:
@@ -22,4 +24,7 @@ Rete2:
 return
 ExitForm:
   Gui, Hide
+return
+Esci:
+  ExitApp
 return
